@@ -1,6 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GReddit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/general.css" />
+  </head>
   <body>
-    <p>test</p>
+    <header class="topbar">
+      <div class="brand"><span class="g">G</span>Reddit</div>
+      <input class="search" placeholder="Search communities, posts, and people" />
+      <button class="btn">+ Create</button>
+    </header>
+
+    <main class="layout">
+      <aside class="left-rail card">
+        <h3>Discover</h3>
+        <a href="#">🔥 Trending</a>
+        <a href="#">🎮 Gaming</a>
+        <a href="#">💻 Tech</a>
+        <a href="#">📷 Photography</a>
+      </aside>
+
+      <section class="feed">
+        <article class="post card">
+          <p class="meta">r/webdev · 2h ago</p>
+          <h2>Built a dark mode toggle using pure CSS variables 🎨</h2>
+          <p>Today I refactored my project and now themes are instant, accessible, and smooth.</p>
+          <div class="post-actions">
+            <button>⬆ 1.8k</button><button>💬 214</button><button>↗ Share</button>
+          </div>
+        </article>
+
+        <article class="post card">
+          <p class="meta">r/startups · 5h ago</p>
+          <h2>We launched on Friday and got our first 100 users this weekend.</h2>
+          <p>Small team, lots of coffee, and one very helpful community. AMA.</p>
+          <div class="post-actions">
+            <button>⬆ 926</button><button>💬 89</button><button>↗ Share</button>
+          </div>
+        </article>
+      </section>
+
+      <aside class="right-rail card">
+        <h3>Top communities</h3>
+        <ol>
+          <li>r/technology</li>
+          <li>r/movies</li>
+          <li>r/science</li>
+          <li>r/books</li>
+        </ol>
+      </aside>
+    </main>
   </body>
 </html>
